@@ -1,8 +1,8 @@
-package org.suggs.codewars.kata;
+package org.suggs.codewars.kata
 
 import io.kotest.assertions.assertSoftly
 import io.kotest.matchers.shouldBe
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test
 import org.suggs.codewars.kata.StockList.countBooksFrom
 import org.suggs.codewars.kata.StockList.extractCategoryAndCountFrom
 import org.suggs.codewars.kata.StockList.stockSummary
@@ -36,7 +36,7 @@ class StockListTest {
 
     @Test
     fun `orders output based on the categories defined`() {
-        assertSoftly{
+        assertSoftly {
             stockSummary(arrayOf("ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"), arrayOf("A", "B")) shouldBe "(A : 200) - (B : 1140)"
             stockSummary(arrayOf("ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"), arrayOf("B", "A")) shouldBe "(B : 1140) - (A : 200)"
         }

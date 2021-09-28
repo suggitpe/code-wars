@@ -14,7 +14,7 @@ object StockList {
         return lstOfArt.map { extractCategoryAndCountFrom(it) }
             .union(createZeroMapFrom(lstOfCat))
             .groupBy { it.first }
-            .mapValues { it.value.sumBy { pair -> pair.second } }
+            .mapValues { it.value.sumOf { pair -> pair.second } }
             .filter { it.key in lstOfCat }
     }
 
