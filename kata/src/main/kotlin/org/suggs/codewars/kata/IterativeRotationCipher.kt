@@ -47,6 +47,7 @@ object IterativeRotationCipher {
     }
 
     fun shiftCharacterOrderLeftBy(textToShift: String, number: Int): String {
+        if (textToShift.length < 2) return textToShift
         return when (number) {
             0 -> textToShift
             else -> shiftCharacterOrderLeftBy(textToShift.drop(1) + textToShift.first(), number - 1)
@@ -64,6 +65,7 @@ object IterativeRotationCipher {
     }
 
     fun shiftCharacterOrderRightBy(textToShift: String, number: Int): String {
+        if (textToShift.length < 2) return textToShift
         return when (number) {
             0 -> textToShift
             else -> shiftCharacterOrderRightBy(textToShift.last() + textToShift.dropLast(1), number - 1)

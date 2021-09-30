@@ -51,8 +51,8 @@ class IterativeRotationCipherTest {
     fun `perform single rotation on text`() {
         performSingleRotationOn(
             10,
-            "If you wish to make an apple pie from scratch, you must first invent the universe."
-        ) shouldBe "eu vni seer .I oufy wi shtom eak apan frplepie som atcr ch,yo ustfum sir htinventt"
+            "If you wish to make an apple pie from scratch, you must first invent the  universe."
+        ) shouldBe "eu vni seer .I oufy wi shtom eak apan frplepie som atcr ch,yo ustfum sir  htinventt"
     }
 
     @Test
