@@ -28,9 +28,4 @@ class TankTruckTest {
             tankVol(80, 120, 3500) shouldBe 2478
         }
     }
-
-    @Test
-    fun `calculates angle from height and radius`(){
-        createAngleFrom(2.0, 3.5) shouldBe 6
-    }
 }
