@@ -3,7 +3,6 @@ package org.suggs.codewars.kata
 import io.kotest.assertions.assertSoftly
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
-import org.suggs.codewars.kata.TankTruck.createAngleFrom
 import org.suggs.codewars.kata.TankTruck.tankVol
 
 class TankTruckTest {
